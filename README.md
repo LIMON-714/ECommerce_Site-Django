@@ -1,4 +1,4 @@
-![image](https://github.com/LIMON-714/ECommerce_Site-Django/assets/81027586/054be9eb-3dd4-4f03-85f4-f59fe9f896c4)# django_e-commerce
+# django_e-commerce
 this is simple e-commerce django project 
 
 Home
