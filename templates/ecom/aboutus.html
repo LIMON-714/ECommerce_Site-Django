@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CL's E-commerce</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">"Welcome to 'CL's Fashion,' a trendy and vibrant fashion shop that caters to the style-conscious individuals of all ages. Nestled in the heart of the city, our boutique offers a delightful array of high-quality clothing, accessories, and footwear for both men and women. From chic and elegant dresses to tailored suits and casual streetwear, Fashion Avenue embraces diversity in fashion and ensures that every customer finds something that perfectly suits their taste and personality. Our knowledgeable and friendly staff is always ready to provide personalized styling advice and assistance, making your shopping experience truly enjoyable. With a curated selection of renowned designer brands as well as up-and-coming local designers, Fashion Avenue is a destination for fashion enthusiasts seeking unique and on-trend pieces. Step inside our stylish store and let Fashion Avenue redefine your wardrobe with its exceptional collection and impeccable service." </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>
